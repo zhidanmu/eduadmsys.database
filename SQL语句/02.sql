@@ -1,0 +1,1 @@
+SELECT Sname NAME, 2014-Sage BIRTH FROM student;

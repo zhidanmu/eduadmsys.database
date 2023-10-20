@@ -1,0 +1,4 @@
+SET SQL_SAFE_UPDATES = 0;
+UPDATE  Student
+SET Sage=Sage+1;
+SELECT * FROM Student;

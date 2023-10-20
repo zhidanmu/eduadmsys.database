@@ -1,0 +1,212 @@
+[
+	{
+		"Sno" : "201215121",
+		"Sname" : "李勇",
+		"Ssex" : "男",
+		"Sage" : 20,
+		"Sdept" : "CS"
+	},
+	{
+		"Sno" : "201215122",
+		"Sname" : "刘晨",
+		"Ssex" : "女",
+		"Sage" : 19,
+		"Sdept" : "CS"
+	},
+	{
+		"Sno" : "201215123",
+		"Sname" : "王敏",
+		"Ssex" : "女",
+		"Sage" : 18,
+		"Sdept" : "MA"
+	},
+	{
+		"Sno" : "201215124",
+		"Sname" : "张立",
+		"Ssex" : "男",
+		"Sage" : 19,
+		"Sdept" : "IS"
+	},
+	{
+		"Sno" : "201215125",
+		"Sname" : "曾莹",
+		"Ssex" : "女",
+		"Sage" : 21,
+		"Sdept" : "MA"
+	},
+	{
+		"Sno" : "201215126",
+		"Sname" : "柳浩超",
+		"Ssex" : "男",
+		"Sage" : 19,
+		"Sdept" : "MA"
+	},
+	{
+		"Sno" : "201215127",
+		"Sname" : "成斌飞",
+		"Ssex" : "男",
+		"Sage" : 19,
+		"Sdept" : "MA"
+	},
+	{
+		"Sno" : "201215128",
+		"Sname" : "祁萍",
+		"Ssex" : "女",
+		"Sage" : 21,
+		"Sdept" : "CS"
+	},
+	{
+		"Sno" : "201215129",
+		"Sname" : "邹倩莉",
+		"Ssex" : "女",
+		"Sage" : 19,
+		"Sdept" : "MA"
+	},
+	{
+		"Sno" : "201215130",
+		"Sname" : "罗辉",
+		"Ssex" : "男",
+		"Sage" : 19,
+		"Sdept" : "IS"
+	},
+	{
+		"Sno" : "201215131",
+		"Sname" : "魏敏",
+		"Ssex" : "男",
+		"Sage" : 20,
+		"Sdept" : "MA"
+	},
+	{
+		"Sno" : "201215132",
+		"Sname" : "陈佳丽",
+		"Ssex" : "女",
+		"Sage" : 20,
+		"Sdept" : "IS"
+	},
+	{
+		"Sno" : "201215133",
+		"Sname" : "祁波宁",
+		"Ssex" : "男",
+		"Sage" : 21,
+		"Sdept" : "IS"
+	},
+	{
+		"Sno" : "201215134",
+		"Sname" : "庞婷娜",
+		"Ssex" : "女",
+		"Sage" : 21,
+		"Sdept" : "CS"
+	},
+	{
+		"Sno" : "201215135",
+		"Sname" : "罗亮",
+		"Ssex" : "男",
+		"Sage" : 19,
+		"Sdept" : "IS"
+	},
+	{
+		"Sno" : "201215136",
+		"Sname" : "常磊凯",
+		"Ssex" : "男",
+		"Sage" : 19,
+		"Sdept" : "CS"
+	},
+	{
+		"Sno" : "201215137",
+		"Sname" : "奚蕾玲",
+		"Ssex" : "女",
+		"Sage" : 19,
+		"Sdept" : "CS"
+	},
+	{
+		"Sno" : "201215138",
+		"Sname" : "成杰",
+		"Ssex" : "男",
+		"Sage" : 20,
+		"Sdept" : "CS"
+	},
+	{
+		"Sno" : "201215139",
+		"Sname" : "成颖梅",
+		"Ssex" : "女",
+		"Sage" : 21,
+		"Sdept" : "CS"
+	},
+	{
+		"Sno" : "201215140",
+		"Sname" : "曾军凯",
+		"Ssex" : "男",
+		"Sage" : 20,
+		"Sdept" : "IS"
+	},
+	{
+		"Sno" : "201215141",
+		"Sname" : "许凯",
+		"Ssex" : "男",
+		"Sage" : 19,
+		"Sdept" : "MA"
+	},
+	{
+		"Sno" : "201215142",
+		"Sname" : "项艳洁",
+		"Ssex" : "女",
+		"Sage" : 19,
+		"Sdept" : "IS"
+	},
+	{
+		"Sno" : "201215143",
+		"Sname" : "余亮涛",
+		"Ssex" : "男",
+		"Sage" : 21,
+		"Sdept" : "CS"
+	},
+	{
+		"Sno" : "201215144",
+		"Sname" : "花华",
+		"Ssex" : "女",
+		"Sage" : 19,
+		"Sdept" : "CS"
+	},
+	{
+		"Sno" : "201215145",
+		"Sname" : "邹琴艳",
+		"Ssex" : "女",
+		"Sage" : 21,
+		"Sdept" : "IS"
+	},
+	{
+		"Sno" : "201215146",
+		"Sname" : "余静",
+		"Ssex" : "女",
+		"Sage" : 21,
+		"Sdept" : "IS"
+	},
+	{
+		"Sno" : "201215147",
+		"Sname" : "罗杰",
+		"Ssex" : "男",
+		"Sage" : 19,
+		"Sdept" : "IS"
+	},
+	{
+		"Sno" : "201215148",
+		"Sname" : "花婷莹",
+		"Ssex" : "女",
+		"Sage" : 21,
+		"Sdept" : "CS"
+	},
+	{
+		"Sno" : "201215149",
+		"Sname" : "陈浩",
+		"Ssex" : "男",
+		"Sage" : 21,
+		"Sdept" : "CS"
+	},
+	{
+		"Sno" : "201215150",
+		"Sname" : "全选",
+		"Ssex" : "男",
+		"Sage" : 18,
+		"Sdept" : "IS"
+	}
+]

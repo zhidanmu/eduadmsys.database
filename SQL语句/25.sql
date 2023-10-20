@@ -1,0 +1,7 @@
+SELECT Course.Cno,Cname,
+SUM(Grade BETWEEN 0 AND 59)/COUNT(*) FAIL,
+SUM(Grade BETWEEN 60 AND 100)/COUNT(*) PASS
+FROM SC,Course
+WHERE SC.Cno=Course.Cno
+GROUP BY SC.Cno;
+

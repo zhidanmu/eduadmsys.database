@@ -1,0 +1,5 @@
+SELECT Sno,AVG(Grade)
+FROM SC
+GROUP BY Sno
+HAVING AVG(Grade) >= 80
+ORDER BY AVG(Grade) DESC;

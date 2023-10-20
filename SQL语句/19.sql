@@ -1,0 +1,5 @@
+SELECT * FROM Student
+WHERE Sdept='CS' 
+EXCEPT
+SELECT * FROM Student
+WHERE Sage <= 19;

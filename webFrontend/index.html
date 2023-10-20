@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>eduAdmSys</title>
+
+</head>
+<body>
+
+	<div id="tableview" class="sidebar blackborder info" data-info="TABLES"></div>
+	
+	<div class="menubar">
+		<div id="apply" class="btn">APPLY</div>
+		<div id="revert" class="btn">REVERT</div>
+		<div id="add" class="btn" style="color:purple;">ADD</div>
+		<div id="filter" class="btn">FILTER</div>
+		<div id="sqlstart" class="btn">SQL</div>
+	</div>
+	
+	<div id="resultview" class="entity blackborder info" data-info="TABLE OR RESULT"></div>
+	
+	<div id="popupview" class="popupview">
+	<div>
+		<div id="sqlview" class="entity blackborder info" data-info="SQL" contenteditable='true'></div>
+		<div class="menubar">
+			<div id="sqlapply" class="btn">apply</div>
+			<div id="sqlclear" class="btn">clear</div>
+			<div id="sqlcancel" class="btn">cancel</div>
+		</div>
+	</div>
+	</div>
+	
+	<div id="popupview2" class="popupview">
+	<div>
+		<div id="filterview" class="entity blackborder info" data-info="FILTER CONDITION">
+		<div id="filtereg">e.g.
+			<div class='info bfinline' data-info="`attr`">= 'value'</div>
+			click button to add filter-conditions
+		</div>
+		
+		<div id="addcondition"></div>
+		
+		<div id="filtercondition"></div>
+		</div>
+		<div class="menubar">
+			<div id="filterand" class="btn">AND</div>
+			<div id="filteror" class="btn">OR</div>
+			<div id="filtercancel" class="btn">cancel</div>
+		</div>
+	</div>
+	</div>
+	
+	
+<script src="sql.js"></script>	
+</body>
+</html>

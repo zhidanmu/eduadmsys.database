@@ -1,0 +1,80 @@
+[
+	{
+		"Cno" : "1",
+		"Cname" : "数据库",
+		"Cpno" : "5",
+		"Ccredit" : 4
+	},
+	{
+		"Cno" : "10",
+		"Cname" : "物理",
+		"Cpno" : null,
+		"Ccredit" : 3
+	},
+	{
+		"Cno" : "11",
+		"Cname" : "计算机网络",
+		"Cpno" : "9",
+		"Ccredit" : 3
+	},
+	{
+		"Cno" : "12",
+		"Cname" : "软件工程",
+		"Cpno" : "5",
+		"Ccredit" : 3
+	},
+	{
+		"Cno" : "13",
+		"Cname" : "人机交互",
+		"Cpno" : "5",
+		"Ccredit" : 3
+	},
+	{
+		"Cno" : "2",
+		"Cname" : "数学",
+		"Cpno" : null,
+		"Ccredit" : 2
+	},
+	{
+		"Cno" : "3",
+		"Cname" : "信息系统",
+		"Cpno" : "1",
+		"Ccredit" : 4
+	},
+	{
+		"Cno" : "4",
+		"Cname" : "操作系统",
+		"Cpno" : "6",
+		"Ccredit" : 3
+	},
+	{
+		"Cno" : "5",
+		"Cname" : "数据结构",
+		"Cpno" : "7",
+		"Ccredit" : 4
+	},
+	{
+		"Cno" : "6",
+		"Cname" : "数据处理",
+		"Cpno" : null,
+		"Ccredit" : 3
+	},
+	{
+		"Cno" : "7",
+		"Cname" : "PASCAL语言",
+		"Cpno" : "6",
+		"Ccredit" : 4
+	},
+	{
+		"Cno" : "8",
+		"Cname" : "JAVA",
+		"Cpno" : null,
+		"Ccredit" : 4
+	},
+	{
+		"Cno" : "9",
+		"Cname" : "离散数学",
+		"Cpno" : "2",
+		"Ccredit" : 4
+	}
+]
