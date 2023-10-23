@@ -412,7 +412,7 @@ const assist={
 			let data=resultview.getRow(dv);
 			console.log(data);
 			if(data && JSON.stringify(data)!='{}'){
-				appendsql="REPLACE INTO "+assist.nowtable;
+				appendsql="INSERT INTO "+assist.nowtable;
 				appendsql+="(`";
 				appendsql+=Object.keys(data).join("`,`");		
 				appendsql+="`) VALUES (";
