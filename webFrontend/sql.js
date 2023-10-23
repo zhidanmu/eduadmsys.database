@@ -2,14 +2,63 @@ function $(id){
 	return document.getElementById(id);
 }
 
+//编码器
+const encoder={
+	encode:function(inp){
+		return btoa(inp);
+	},
+	decode:function(inp){
+		return atob(inp);
+	}
+}
+
+//TOKEN
+let token={
+	val:"",
+	//保存token
+	save:function(){
+		localStorage.setItem('token',token.val);
+	},
+	//载入token
+	load:function(){
+		let t=localStorage.getItem('token');
+		if(!t)token.val="";
+		else token.val=t;
+	},
+	//设置token
+	set:function(){
+		let inp=window.prompt("set TOKEN:",token.val);
+		if(inp&&inp!=""){
+			token.val=inp;
+			token.save();
+		}
+	},
+	//初始化
+	init:function(){
+		token.load();
+		$('token').onclick=function(){
+			token.set();
+		}
+	},
+	//加密
+	encodeVal:function(){
+		return btoa(token.val);
+	}
+}
+
+token.init();
+
 let backendUrl="http://localhost:8888/";
 
 //传输sql到后端并获得执行结果
 async function execSQL(sql,url=backendUrl){
-	sql=encodeURI(sql);
 	console.log(sql);
-	let response = await fetch(url+"?sql="+sql);
+	sql=encoder.encode(sql);
+	let response = await fetch(url+"?sql="+sql+"&token="+token.encodeVal());
 	let data = await response.json();
+	if(data['TokenError']){
+		data=data['TokenError'];
+	}
 	return data;
 }
 
@@ -26,10 +75,17 @@ const tables={
 	//初始化
 	init:async function(){
 		tables.clear();
-		await tables.getNames();
-		await tables.getColumns();
-		console.log(tables.names);
-		console.log(tables.columns);
+		let test=await execSQL('#');
+		console.log(test);
+		console.log('check end');
+		if(test && typeof(test)!="string"){
+			await tables.getNames();
+			await tables.getColumns();
+			console.log(tables.names);
+			console.log(tables.columns);
+		}else{
+			resultview.elem.innerHTML=test;
+		}
 	},
 	//获取表名
 	getNames:async function(){
@@ -85,6 +141,7 @@ const tableview={
 	},
 	//初始化
 	init:async function(){
+		token.set();
 		await tables.init();
 		let names=tables.names;
 		let tableitem=tableview.tableitem;
@@ -554,7 +611,6 @@ const assist={
 }
 
 assist.init();
-
 
 
 
