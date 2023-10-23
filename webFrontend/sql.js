@@ -54,7 +54,11 @@ let backendUrl="http://localhost:8888/";
 async function execSQL(sql,url=backendUrl){
 	console.log(sql);
 	sql=encoder.encode(sql);
-	let response = await fetch(url+"?sql="+sql+"&token="+token.encodeVal());
+	let response = await fetch(url+"?sql="+sql,{
+		headers:{
+			"token":token.encodeVal()
+		}
+	});
 	let data = await response.json();
 	if(data['TokenError']){
 		data=data['TokenError'];

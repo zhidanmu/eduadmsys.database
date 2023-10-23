@@ -46,7 +46,7 @@ let frontendUrl="http://localhost:8080";
 http.createServer(function (request, response) {
 	
     response.setHeader("Access-Control-Allow-Origin",frontendUrl);
-    response.setHeader("Access-Control-Allow-Headers","content-type");
+    response.setHeader("Access-Control-Allow-Headers","*");
     response.setHeader("Access-Control-Allow-Methods","POST,GET");
 	
 
@@ -58,15 +58,15 @@ http.createServer(function (request, response) {
 	let tokenCheck=false;
 	
 	//TOKEN校验
-	if(para && para.token){
-		let tokenGet=para.token;
-		console.log(tokenGet);
-		if(!checkToken(tokenGet)){
-			response.end(JSON.stringify({'TokenError':"<span style='color:red;'>TOKEN ERROR</span>"}));
-		}else{
-			tokenCheck=true;
-		}
+	//console.log(request.headers);
+	let tokenGet=request.headers['token'];
+	console.log(tokenGet);
+	if(!checkToken(tokenGet)){
+		response.end(JSON.stringify({'TokenError':"<span style='color:red;'>TOKEN ERROR</span>"}));
+	}else{
+		tokenCheck=true;
 	}
+	
 	
 	if(para && para.sql && para.sql!=""){
 		sql=para.sql;
