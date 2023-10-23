@@ -70,7 +70,7 @@ const tableview={
 			let data=await execSQL("SELECT * FROM "+tname+";");
 			//console.log(data);
 			
-			revert.set(dv.onclick);
+			revert.set(dv.ondblclick);
 			assist.clear();
 			assist.nowtable=tname;
 			
